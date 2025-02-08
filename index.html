@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,24 +14,67 @@
     <script type="module" src="src/js/app.js"></script>
 </head>
 <body>
-    <p class="text-display-large">hello world</p>
-    <p class="text-display-medium">hello world</p>
-    <p class="text-display-small">hello world</p>
+    <header class="sidebar" dtat-sidebar>
 
-    <p class="text-headline-large">hello world</p>
-    <p class="text-headline-medium">hello world</p>
-    <p class="text-headline-small">hello world</p>
+        <div class="wrapper wrapper-1">
 
-    <p class="text-title-large">hello world</p>
-    <p class="text-title-medium">hello world</p>
-    <p class="text-title-small">hello world</p>
+            <a href="/">
+                <img src="./src/images/logo-light.svg" alt="Note-keeper"
+                class="logo-light">
+                <img src="./src/images/logo-dark.svg" alt="Note-keeper"
+                class="logo-dark">
+            </a>
 
-    <p class="text-body-large">hello world</p>
-    <p class="text-body-medium">hello world</p>
-    <p class="text-body-small">hello world</p>
+            <button class="menu-btn icon large" aria-label="close menu" data-sidebar-toggler>
+                <span class="material-symbols-rounded" aria-hidden="true">close</span>
 
-    <p class="text-label-large">hello world</p>
-    <p class="text-label-medium">hello world</p>
-    <p class="text-label-small">hello world</p>
+                <div class="state-layer"></div>
+            </button>
+
+        </div>
+
+        <button class="fab" data-note-create-btn>
+            <span class="material-symbols-rounded" aria-hidden="true">add</span>
+            <span class="text text-label-large">New note</span>
+
+            <div class="state-layer"></div>
+        </button>
+
+        <div class="wrapper wrapper-2">
+
+            <h2 class="text-title-small">NOTEBOOKS</h2>
+
+            <button class="icon-btn small" data-tooltip="Create new notebook" aria-label="Create new notebook">
+                <span class="material-symbols-rounded" aria-hidden="true">add</span>
+
+                <div class="state-layer"></div>
+            </button>
+
+        </div>
+
+        <nav class="nav custom-scrollbar" data-sidebar>
+
+            <div class="nav-item">
+
+                <span class="text text-label-large" data-notebook-field>My Notebook
+                </span>
+
+                <button class="icon-btn small" aria-label="Edit notebook" data-tooltip="Edit notebook" data-edit-btn>
+                    <span class="material-symbols-rounded" aria-hidden="true">edit</span>
+
+                </button>
+
+                <button class="icon-btn small" aria-label="Delete notebook" data-tooltip="Delete notebook" data-delete-btn>
+                    <span class="material-symbols-rounded" aria-hidden="true">delete</span>
+
+                </button>
+
+                <div class="state-layer"></div>
+
+            </div>
+
+        </nav>
+
+    </header>
 </body>
 </html>
