@@ -14,7 +14,7 @@
     <script type="module" src="src/js/app.js"></script>
 </head>
 <body>
-    <header class="sidebar" dtat-sidebar>
+    <header class="sidebar " data-sidebar>
 
         <div class="wrapper wrapper-1">
 
@@ -54,7 +54,7 @@
 
         <nav class="nav custom-scrollbar" data-sidebar-list>
 
-            <div class="nav-item">
+            <div class="nav-item active">
 
                 <span class="text text-label-large" data-notebook-field>My Notebook
                 </span>
@@ -73,6 +73,7 @@
 
             </div>
 
+    
         </nav>
 
         <div class="cp-info">
@@ -82,5 +83,28 @@
     </header>
 
     <div class="overlay" data-sidebar-overlay data-sidebar-toggler></div>
+
+    <main class="main">
+
+        <div class="header">
+
+            <div class="wrapper">
+                <p class="title text-title-large" data-greeting>Good Morning</p>
+
+                <span class="text text-body-medium" data-current-date>Feb 09 2025</span>
+            </div>
+
+            <buton class="theme-btn icon-btn large" aria-label="Toggle theme" data-tooltip="Toggle theme" data-theme-btn>
+                <span class="material-symbols-rounded dark-icon" aria-hidden="true">dark_mode</span>
+                <span class="material-symbols-rounded light-icon" aria-hidden="true">light_mode</span>
+
+                <div class="state-layer"></div>
+            </buton>
+
+        </div>
+        
+    </main>
+
+
 </body>
 </html>
