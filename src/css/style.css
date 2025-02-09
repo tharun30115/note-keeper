@@ -493,6 +493,16 @@ body{
   transition: border-color var(--tr-duration-short) var(--tr-easing-linear);
  }
 
+ .card:where(:hover, :focus-visible) { border-color: var(--outline);}
+
+ .card .card-title { color: var(--on-surface);}
+
+ .card .card-text { 
+  color: var(--on-surface-variant);
+  margin-block: var(--spacing-4);
+  text-wrap: balance;
+  -webkit-line-clamp: ;
+ }
 
 
 /**
